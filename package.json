@@ -1,28 +1,32 @@
 {
-  "name": "food-photos",
+  "name": "tryon",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "dependencies": {
     "gulp-install": "^1.1.0",
-    "normalize": "^0.3.1"
+    "normalize": "^0.3.1",
+    "postcss-cli": "^5.0.1"
   },
   "devDependencies": {
     "browser-sync": "^2.24.4",
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.2.1"
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^3.2.1",
+    "precss": "^3.1.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/10Volo/charithheenpalla.com.git"
+    "url": "git+https://github.com/10Volo/tryon.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/10Volo/charithheenpalla.com/issues"
+    "url": "https://github.com/10Volo/tryon"
   },
-  "homepage": "https://github.com/10Volo/charithheenpalla.com#readme"
+  "homepage": "https://10volo.github.io/tryon/"
 }
