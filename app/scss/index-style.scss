@@ -1,27 +1,5 @@
-Skip to content
-
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- @10Volo Sign out
-0
-0 0 10Volo/tryon
-					 Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
-																												tryon/app/scss/index-style.scss
-856de40  15 hours ago
-@10Volo 10Volo fix menu on the buttom
-														We found a potential security vulnerability in one of your dependencies.
-														A dependency defined in package-lock.json has known security vulnerabilities and should be updated.
-
-														Only the owner of this repository can see this message.
-														Learn more about vulnerability alerts
-
-
-182 lines (153 sloc)  2.72 KB
-@import "modules";
+@import "module-right -scroll";
+@import "module-fonts";
 
 //SASS Variables
 $bg-color-main: #000000;
@@ -69,6 +47,11 @@ h1, h2, h3, h4, h5 {
 	margin: 0;
 }
 
+h1 {
+	font-family: HKGrotesk-Regular;
+}
+
+
 header.header-fixed {
 	color: #000;
 	background-color: green;
@@ -102,8 +85,8 @@ header.header-fixed {
 			ul {
 				display: flex;
 				list-style: none;
-				font-family: 'Roboto', sans-serif;
-				font-stretch: ultra-expanded;
+				//font-family: 'Roboto', sans-serif;
+				//font-stretch: ultra-expanded;
 				font-size: 16px;
 				text-transform: uppercase;
 				margin: 0;
@@ -200,18 +183,3 @@ header #header-scroll {
 header .menu ul li a.active {
 	border-bottom: 1px solid blue; }
 
-
-
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-API
-Training
-Shop
-Blog
-About
-Press h to open a hovercard with more details.
