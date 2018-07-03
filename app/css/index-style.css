@@ -18,7 +18,7 @@ ul.onepage-pagination {
 
 @font-face {
   font-family: HKGrotesk-Regular;
-  src: url("../fonts/HKGrotesk-Regular.otf");
+  src: url("../fonts/HKGrotesk/HKGrotesk-Regular.otf");
   font-style: normal;
   font-weight: normal; }
 
@@ -100,9 +100,6 @@ ul {
 
 h1, h2, h3, h4, h5 {
   margin: 0; }
-
-h1 {
-  font-family: HKGrotesk-Regular; }
 
 header.header-fixed {
   color: #000;
