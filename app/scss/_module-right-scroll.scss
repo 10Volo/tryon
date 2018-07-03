@@ -22,4 +22,12 @@ ul.onepage-pagination {
 			}
 		}
 	}
+
+	&.hide {
+		display: none;
+	}
+
+	li:first-child {
+		display: none;
+	}
 }

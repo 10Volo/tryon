@@ -4,11 +4,22 @@ onePageScroll(".main", {
 	loop: true,
 	responsiveFallback: false,
 	afterMove: function(index) {
-		var nav = $('nav');
+		var nav = $('nav'),
+			pagination = $('.onepage-pagination');
 
 		nav.find('a').removeClass('active');
 		nav.find('a[href="#'+index+'"]').addClass('active');
+
+		if(index === 1) {
+			pagination.addClass('hide');
+		} else {
+			pagination.removeClass('hide');
+		}
 	}
+});
+
+$("#moveTo").click(function() {
+	moveTo(".main", 2);
 });
 
 // responsive menu toggle

@@ -15,6 +15,10 @@ ul.onepage-pagination {
       left: 10px;
       border: none;
       margin-top: 0px; }
+  ul.onepage-pagination.hide {
+    display: none; }
+  ul.onepage-pagination li:first-child {
+    display: none; }
 
 @font-face {
   font-family: HKGrotesk-Regular;
@@ -217,6 +221,9 @@ header.header-fixed {
             width: 100%;
             height: 3px;
             background-color: #ffffff; } }
+
+.viewing-page-1 .onepage-pagination {
+  display: none; }
 
 .wrapper {
   height: 100% !important;
