@@ -6,7 +6,7 @@ onePageScroll(".main", {
 	afterMove: function(index) {
 		var nav = $('nav'),
 			pagination = $('.onepage-pagination');
-
+		
 		nav.find('a').removeClass('active');
 		nav.find('a[href="#'+index+'"]').addClass('active');
 
@@ -21,10 +21,6 @@ onePageScroll(".main", {
 $("#moveTo").click(function() {
 	moveTo(".main", 2);
 });
-
-
-
-
 
 $("#moveUp").click(function() {
 	moveTo(".main", 1);

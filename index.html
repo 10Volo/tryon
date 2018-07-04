@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Tryon</title>
-	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="app/css/index-style.css">
@@ -16,59 +16,236 @@
 
 </head>
 <body class="l-body">
-	<header class="header-fixed">
-		<nav class="menu-nav">
-			<div class="header-logo">
-				<img src="app/img/tryon-logo.png" alt="">
-			</div>
-			<div class="menu">
-				<ul>
-					<li class="items"><a href="#1">about</a></li>
-					<li class="items"><a href="#2">technology</a></li>
-					<li class="items"><a href="#3">team</a></li>
-					<li class="items"><a href="#4">contact </a></li>
-				</ul>
-			</div>
-			<div class="toggle"  onclick="menu_toggle(this.parentNode)">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-		</nav>
-	</header>
-	
-	<div class="wrapper">
-		
-		<div class="main">
-			
-			<section class="introduce">
-				introduce
-
-				<a id="moveTo" href="javascript:void(0)">sraka</a>
-			</section>
-			
-			<section id="1" class="page2 about">
-				about
-				<a id="moveUp">sraka verh</a>
-			</section>
-			
-			<section id="2" class="page3 technology">
-				technology
-			</section>
-			
-			<section id="3" class="page3 team">
-				team
-			</section>
-			
-			<section id="4" class="page3 contact">
-				contact
-			</section>
-		
+<header class="header-fixed">
+	<nav class="menu-nav">
+		<div class="header-logo">
+			<img src="app/img/tryon-logo.png" alt="">
 		</div>
+		<div class="menu">
+			<ul>
+				<li class="items"><a href="#2">about</a></li>
+				<li class="items"><a href="#3">technology</a></li>
+				<li class="items"><a href="#4">team</a></li>
+				<li class="items"><a href="#5">contact </a></li>
+			</ul>
+		</div>
+		<div class="toggle" onclick="menu_toggle(this.parentNode)">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</nav>
+</header>
+
+<div class="wrapper">
+	<div class="main">
+		<section class="home-page">
+			<div class="container">
+				<div class="home-page-motto">
+					<h2 class="title-first">We create <span>augmented reality</span> tech for jewelry brands.</h2>
+				</div>
+				<div class="home-page-phone">
+					<img src="app/img/phone-cut.png" alt="">
+				</div>
+				<a id="moveTo" href="javascript:void(0)">scroll
+					<img src="app/img/arrow-down.png" alt="">
+				</a>
+			</div>
+		</section>
+		<section id="2" class="page1 about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="about-wrapper">
+							<div class="about-title">
+								<h2 class="title-second">Our Product</h2>
+							</div>
+							<div class="about-description">
+								<h3 class="text-description">A mobile application where customers can try on jewelry and
+									accessories with no need to visit a real store</h3>
+							</div>
+							<div class="about-info-sub-description">
+								<p class="text-paragraph">TRYON Technology is an AI-enabled start-up specialized in
+									designing and producing augmented reality software for jewelry e-commerce and retail
+									stores. Our team utilizes power of artificial intelligence and deep neural networks
+									in developing mobile applications to preview a variety of hand accessories and
+									jewelry.</p>
+							</div>
+							<div class="about-store">
+								<div class="about store-banner">
+									<a href=""><img src="app/img/apple-store.png" alt=""></a></div>
+								<div class="about store-banner">
+									<a href=""><img src="app/img/google-play.png" alt=""></a></div>
+							</div>
+							<div class="about-info">
+								<h4 class="text-info">
+									Don’t want to wait until the app is published?
+									<a href="">Request a Demo Now</a> Request a Demo Now
+								</h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="about-phone">
+							<img src="app/img/i-phone-x.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<a id="moveUp"><img src="app/img/arrow-down.png" alt="">top</a>
+		</section>
+		<section id="3" class="page2 technology">
+			<div class="container">
+				<div class="technology-wrapper">
+					<div class="technology-title">
+						<h2 class="title-second">Technology</h2>
+					</div>
+					<div class="technology-description">
+						<h3 class="text-description">State-of-the-art computer vision and rendering</h3>
+					</div>
+					<div class="technology-types">
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="technology-type-item">
+									<div class="technology-item-icon">
+										<img src="app/img/icon/icon-1.png" alt="">
+									</div>
+									<div class="technology-item-description">
+										<p class="text-paragraph">Real time inference of deep neural networks on mobile devices</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="technology-type-item">
+									<div class="technology-item-icon">
+										<img src="app/img/icon/icon-2.png" alt="">
+									</div>
+									<div class="technology-item-description">
+										<p class="text-paragraph">Advancing algorithm performance to human perception</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="technology-type-item">
+									<div class="technology-item-icon">
+										<img src="app/img/icon/icon-3.png" alt="">
+									</div>
+									<div class="technology-item-description">
+										<p class="text-paragraph">Tracking and annotating human hands</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="technology-types">
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="technology-type-item">
+									<div class="technology-item-icon">
+										<img src="app/img/icon/icon-4.png" alt="">
+									</div>
+									<div class="technology-item-description">
+										<p class="text-paragraph">Collecting unique datasets and annotations</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="technology-type-item">
+									<div class="technology-item-icon">
+										<img src="app/img/icon/icon-5.png" alt="">
+									</div>
+									<div class="technology-item-description">
+										<p class="text-paragraph">Ray-tracing and rendering complex objects in various environments</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="technology-type-item">
+									<div class="technology-item-icon">
+										<img src="app/img/icon/icon-6.png" alt="">
+									</div>
+									<div class="technology-item-description">
+										<p class="text-paragraph">Some another super benefut of out technology</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a id="moveUp"><img src="app/img/arrow-down.png" alt="">top</a>
+		</section>
+		<section id="4" class="page3 team">
+			<div class="container">
+				<div class="team-wrapper">
+					<div class="team-title">
+						<h2 class="title-second">Team</h2>
+					</div>
+					<div class="time-description">
+						<h3 class="text-description">Meet the people behind our company</h3>
+					</div>
+					<div class="team-members">
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="team-member-item">
+									<div class="team-member-photo">
+										<img src="app/img/andrii.png" alt="">
+									</div>
+									<div class="team-member-info">
+										<div class="team-member-name">
+											<h3>Andrii</h3>
+										</div>
+										<div class="team-member-position">
+											<span>CTO, Co-founder</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="team-member-item">
+									<div class="team-member-photo">
+										<img src="app/img/nataliia.png" alt="">
+									</div>
+									<div class="team-member-info">
+										<div class="team-member-name">
+											<h3>Nataliia</h3>
+										</div>
+										<div class="team-member-position">
+											<span>CEO, Co-founder</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="team-member-item">
+									<div class="team-member-photo">
+										<img src="app/img/nazarii.png" alt="">
+									</div>
+									<div class="team-member-info">
+										<div class="team-member-name">
+											<h3>Nazarii</h3>
+										</div>
+										<div class="team-member-position">
+											<span>Mobile Software Engineer</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a id="moveUp"><img src="app/img/arrow-down.png" alt="">top</a>
+		</section>
+		<section id="5" class="page4 contact">
+			contact
+		</section>
+	
 	</div>
-	
-	
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-	<script src="app/js/main.js"></script>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="app/js/main.js"></script>
 </body>
 </html>

@@ -5,6 +5,18 @@
 	font-weight: normal;
 }
 
+@font-face {
+	font-family: HKGrotesk-SemiBold;
+	src: url('../fonts/HKGrotesk/HKGrotesk-SemiBold.otf');
+	font-style: normal;
+	font-weight: normal;
+}
+
+//font-family: HKGrotesk-Regular;
+//font-family: HKGrotesk-SemiBold;
+//font-family: 'Open Sans', sans-serif;
+//font-family: 'Montserrat', sans-serif;
+
 //SASS Variables
 $fnt-size-title-lg: 50px;
 $fnt-size-desc-lg: 24px;
@@ -15,14 +27,16 @@ $fnt-color-description: #9b9b9b;
 
 .title-first {
 	color: $fnt-color-main;
+	width: 1073px;
 	font-size: 70px;
+	text-align: left;
 	font-family: Montserrat;
 	font-weight: normal;
 	font-style: normal;
 	font-stretch: normal;
 	line-height: normal;
 	letter-spacing: normal;
-	span.fnt-bold {
+	span {
 		font-weight: bold;
 	}
 }
@@ -41,7 +55,7 @@ $fnt-color-description: #9b9b9b;
 .text-description {
 	color: $fnt-color-description;
 	font-size: $fnt-size-desc-lg;
-	font-family: OpenSans;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	font-style: normal;
 	font-stretch: normal;
@@ -52,7 +66,7 @@ $fnt-color-description: #9b9b9b;
 .text-paragraph {
 	color: $fnt-color-main;
 	font-size: $fnt-size-paragraph-lg;
-	font-family: OpenSans;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	font-stretch: normal;
@@ -62,13 +76,21 @@ $fnt-color-description: #9b9b9b;
 }
 
 .text-info {
-	color: $fnt-color-main;
+	color: $fnt-color-main !important;
 	font-size: $fnt-size-text-info;
-	font-family: HKGrotesk;
+	font-family: HKGrotesk-Regular;
 	font-weight: 600;
 	font-style: normal;
 	font-stretch: normal;
 	line-height: 2.6;
 	letter-spacing: 2px;
-	text-align: center;
+	text-align: left;
+	text-transform: uppercase;
+	a {
+		color: #000000;
+		border-bottom: 1px solid #000000;
+		&:hover {
+			text-decoration: none;
+		}
+	}
 }
