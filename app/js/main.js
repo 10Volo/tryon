@@ -22,6 +22,14 @@ $("#moveTo").click(function() {
 	moveTo(".main", 2);
 });
 
+
+
+
+
+$("#moveUp").click(function() {
+	moveTo(".main", 1);
+});
+
 // responsive menu toggle
 function menu_toggle(header) {
 	header.classList.toggle('show');
