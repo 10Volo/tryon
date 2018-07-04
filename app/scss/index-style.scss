@@ -153,27 +153,26 @@ header.header-fixed {
 	}
 }
 
-.viewing-page-1 {
-	.onepage-pagination {
-		display: none;
+
+.l-body {
+	&.viewing-page-1 {
+		.onepage-pagination {
+			display: none;
+		}
+	}
+
+	.wrapper {
+		height: 100% !important;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	section {
+		height: 100vh;
+		border: 5px solid red;
 	}
 }
 
-
-
-
-
-.wrapper {
-	height: 100% !important;
-	margin: 0 auto;
-	overflow: hidden;
-}
-
-
-section {
-	height: 100vh;
-	border: 5px solid red;
-}
 header #header-scroll {
 	background: #000000;
 	position: fixed;
