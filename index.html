@@ -16,6 +16,7 @@
 
 </head>
 <body class="l-body">
+<a href="" id="moveUp"><img src="app/img/arrow-down.png" alt="">top</a>
 <header class="header-fixed">
 	<nav class="menu-nav">
 		<div class="header-logo">
@@ -23,10 +24,10 @@
 		</div>
 		<div class="menu">
 			<ul>
-				<li class="items"><a href="#2">about</a></li>
-				<li class="items"><a href="#3">technology</a></li>
-				<li class="items"><a href="#4">team</a></li>
-				<li class="items"><a href="#5">contact </a></li>
+				<li class="items"><a href="#2" onClick="moveTo('.main', 2); event.preventDefault();">about</a></li>
+				<li class="items"><a href="#3" onClick="moveTo('.main', 3); event.preventDefault();">technology</a></li>
+				<li class="items"><a href="#4" onClick="moveTo('.main', 4); event.preventDefault();">team</a></li>
+				<li class="items"><a href="#5" onClick="moveTo('.main', 5); event.preventDefault();">contact </a></li>
 			</ul>
 		</div>
 		<div class="toggle" onclick="menu_toggle(this.parentNode)">
@@ -92,7 +93,6 @@
 					</div>
 				</div>
 			</div>
-			<a id="moveUp"><img src="app/img/arrow-down.png" alt="">top</a>
 		</section>
 		<section id="3" class="page2 technology">
 			<div class="container">
@@ -176,7 +176,6 @@
 					</div>
 				</div>
 			</div>
-			<a id="moveUp"><img src="app/img/arrow-down.png" alt="">top</a>
 		</section>
 		<section id="4" class="page3 team">
 			<div class="container">
@@ -238,7 +237,6 @@
 					</div>
 				</div>
 			</div>
-			<a id="moveUp"><img src="app/img/arrow-down.png" alt="">top</a>
 		</section>
 		<section id="5" class="page4 contact">
 			<div class="contact-wrapper">
@@ -323,8 +321,6 @@
 					</div>
 				</div>
 			</div>
-			
-			<a id="moveUp"><img src="app/img/arrow-down.png" alt="">top</a>
 		</section>
 	</div>
 </div>

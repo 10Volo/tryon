@@ -163,7 +163,7 @@ header.header-fixed {
   background-color: #ffffff;
   width: 100%;
   height: 80px;
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
@@ -295,16 +295,27 @@ header.header-fixed {
             height: 3px;
             background-color: #ffffff; } }
 
-.l-body.viewing-page-1 .onepage-pagination {
-  display: none; }
-
-.l-body .wrapper {
-  height: 100% !important;
-  margin: 0 auto;
-  overflow: hidden; }
-
-.l-body section {
-  height: 100vh; }
+.l-body {
+  position: relative;
+  z-index: 1; }
+  .l-body #moveUp {
+    position: fixed;
+    bottom: 60px;
+    right: 13px;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+    z-index: 5; }
+  .l-body.viewing-page-1 .onepage-pagination {
+    display: none; }
+  .l-body:not(.viewing-page-1) #moveUp {
+    opacity: 1; }
+  .l-body .wrapper {
+    height: 100% !important;
+    margin: 0 auto;
+    overflow: hidden; }
+  .l-body section {
+    height: 100vh; }
 
 section.home-page {
   position: relative; }
@@ -365,10 +376,6 @@ section.about {
     align-items: center;
     margin-top: 60px;
     margin-left: 0px; }
-  section.about a#moveUp {
-    position: absolute;
-    bottom: 60px;
-    right: 13px; }
 
 section.technology {
   position: relative; }
@@ -402,10 +409,6 @@ section.technology {
         margin: auto; }
         section.technology .technology-wrapper .technology-types .technology-type-item .technology-item-description p {
           text-align: center; }
-  section.technology a#moveUp {
-    position: absolute;
-    bottom: 120px;
-    right: 13px; }
 
 section.team {
   position: relative; }
@@ -461,10 +464,6 @@ section.team {
           line-height: 1.88;
           letter-spacing: 0.6px;
           text-align: center; }
-  section.team a#moveUp {
-    position: absolute;
-    bottom: 120px;
-    right: 13px; }
 
 section.contact {
   position: relative; }
@@ -553,7 +552,3 @@ section.contact {
       section.contact .support-wrapper .support-brand-row:last-child {
         margin-top: 20px;
         margin-bottom: 70px; }
-  section.contact a#moveUp {
-    position: absolute;
-    bottom: 120px;
-    right: 13px; }
