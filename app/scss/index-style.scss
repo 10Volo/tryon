@@ -195,7 +195,7 @@ section.home-page {
 	.home-page-phone {
 		position: absolute;
 		bottom: 0;
-		right: 190px;
+		right: 165px;
 		img {
 
 		}
@@ -345,6 +345,97 @@ section.team {
 							text-align: center;
 						}
 					}
+				}
+			}
+		}
+	}
+	a#moveUp {
+		position: absolute;
+		bottom: 120px;
+		right: 13px;
+	}
+}
+
+section.contact {
+	position: relative;
+	.contact-wrapper {
+		height: calc(100vh - 80px);
+		.contact-title {
+			h2 {
+				text-align: center;
+			}
+		}
+		.contact-description {
+			margin-top: 25px;
+			h3 {
+				text-align: center;
+			}
+		}
+		.contact-item {
+			display: flex;
+			justify-content: center;
+			margin-top: 80px;
+			.contact-item-title {
+				text-align: right;
+				margin-right: 20px;
+				span {
+					font-family: 'Open Sans', sans-serif;
+					font-size: 16px;
+					line-height: 1.88;
+					letter-spacing: 0.4px;
+					color: #e2e2e2;
+				}
+			}
+			.contact-item-info {
+				display: flex;
+				flex-direction: column;
+				span {
+					font-family: 'Open Sans', sans-serif;
+					font-size: 16px;
+					line-height: 1.88;
+					letter-spacing: 0.4px;
+				}
+			}
+
+		}
+		.contact-us {
+			margin-top: 50px;
+			margin-bottom: 60px;
+			h4 {
+				text-align: center;
+			}
+		}
+	}
+	.support-wrapper {
+		background-color: #fbfbfb;
+		border-top: 1px solid #e1d6d6;
+		.support-title {
+			display: flex;
+			justify-content: center;
+			margin-top: 25px;
+			span {
+				color: $fnt-color-description;
+				font-family: HKGrotesk-Regular;
+				font-size: 10px;
+				font-weight: 600;
+				line-height: 1;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+			}
+		}
+		.support-brand-row{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 40px;
+			//margin-bottom: 30px;
+			&:last-child {
+				margin-top: 20px;
+				margin-bottom: 70px;
+			}
+			.support-brand {
+				img {
+
 				}
 			}
 		}

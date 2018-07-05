@@ -322,7 +322,7 @@ section.home-page {
   section.home-page .home-page-phone {
     position: absolute;
     bottom: 0;
-    right: 190px; }
+    right: 165px; }
   section.home-page a#moveTo {
     position: absolute;
     bottom: 60px;
@@ -462,6 +462,98 @@ section.team {
           letter-spacing: 0.6px;
           text-align: center; }
   section.team a#moveUp {
+    position: absolute;
+    bottom: 120px;
+    right: 13px; }
+
+section.contact {
+  position: relative; }
+  section.contact .contact-wrapper {
+    height: calc(100vh - 80px); }
+    section.contact .contact-wrapper .contact-title h2 {
+      text-align: center; }
+    section.contact .contact-wrapper .contact-description {
+      margin-top: 25px; }
+      section.contact .contact-wrapper .contact-description h3 {
+        text-align: center; }
+    section.contact .contact-wrapper .contact-item {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-top: 80px; }
+      section.contact .contact-wrapper .contact-item .contact-item-title {
+        text-align: right;
+        margin-right: 20px; }
+        section.contact .contact-wrapper .contact-item .contact-item-title span {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 16px;
+          line-height: 1.88;
+          letter-spacing: 0.4px;
+          color: #e2e2e2; }
+      section.contact .contact-wrapper .contact-item .contact-item-info {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        section.contact .contact-wrapper .contact-item .contact-item-info span {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 16px;
+          line-height: 1.88;
+          letter-spacing: 0.4px; }
+    section.contact .contact-wrapper .contact-us {
+      margin-top: 50px;
+      margin-bottom: 60px; }
+      section.contact .contact-wrapper .contact-us h4 {
+        text-align: center; }
+  section.contact .support-wrapper {
+    background-color: #fbfbfb;
+    border-top: 1px solid #e1d6d6; }
+    section.contact .support-wrapper .support-title {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-top: 25px; }
+      section.contact .support-wrapper .support-title span {
+        color: #9b9b9b;
+        font-family: HKGrotesk-Regular;
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: 2px;
+        text-transform: uppercase; }
+    section.contact .support-wrapper .support-brand-row {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-top: 40px; }
+      section.contact .support-wrapper .support-brand-row:last-child {
+        margin-top: 20px;
+        margin-bottom: 70px; }
+  section.contact a#moveUp {
     position: absolute;
     bottom: 120px;
     right: 13px; }
