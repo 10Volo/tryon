@@ -24,6 +24,7 @@ $("#moveTo").click(function() {
 
 $("#moveUp").click(function() {
 	moveTo(".main", 1);
+	event.preventDefault();
 });
 
 // responsive menu toggle

@@ -60,7 +60,7 @@ header.header-fixed {
 	background-color: #ffffff;
 	width: 100%;
 	height: 80px;
-	position: relative;
+	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 10;
@@ -165,9 +165,27 @@ header.header-fixed {
 
 
 .l-body {
+	position: relative;
+	z-index: 1;
+
+	#moveUp {
+		position: fixed;
+		bottom: 60px;
+		right: 13px;
+		opacity: 0;
+		transition: opacity 0.5s linear;
+		z-index: 5;
+	}
+
 	&.viewing-page-1 {
 		.onepage-pagination {
 			display: none;
+		}
+	}
+
+	&:not(.viewing-page-1) {
+		#moveUp {
+			opacity: 1;
 		}
 	}
 
@@ -240,11 +258,6 @@ section.about {
 		margin-top: 60px;
 		margin-left: 0px;
 	}
-	a#moveUp {
-		position: absolute;
-		bottom: 60px;
-		right: 13px;
-	}
 }
 
 section.technology {
@@ -283,11 +296,6 @@ section.technology {
 				}
 			}
 		}
-	}
-	a#moveUp {
-		position: absolute;
-		bottom: 120px;
-		right: 13px;
 	}
 }
 
@@ -348,11 +356,6 @@ section.team {
 				}
 			}
 		}
-	}
-	a#moveUp {
-		position: absolute;
-		bottom: 120px;
-		right: 13px;
 	}
 }
 
@@ -439,11 +442,6 @@ section.contact {
 				}
 			}
 		}
-	}
-	a#moveUp {
-		position: absolute;
-		bottom: 120px;
-		right: 13px;
 	}
 }
 
