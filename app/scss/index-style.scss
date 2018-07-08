@@ -208,6 +208,9 @@ header.header-fixed {
 section.home-page {
 	position: relative;
 	margin-top: 80px;
+	@media (max-width: 1024px) {
+		background-color: green;
+	}
 	.home-page-motto {
 		height: 100vh;
 		display: flex;
@@ -221,9 +224,15 @@ section.home-page {
 		@media (max-width: 1366px) {
 			right: 130px;
 		}
+		@media (max-width: 1024px) {
+			right: 10px;
+		}
 		img {
 			@media (max-width: 1366px) {
 				width: 73%;
+			}
+			@media (max-width: 1024px) {
+				width: 60%;
 			}
 		}
 	}
