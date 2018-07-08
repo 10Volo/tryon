@@ -21,6 +21,7 @@
 $fnt-size-title-lg: 50px;
 $fnt-size-desc-lg: 24px;
 $fnt-size-paragraph-lg: 20px;
+$fnt-size-paragraph-md: 18px;
 $fnt-size-text-info: 10px;
 $fnt-color-main: #000000;
 $fnt-color-description: #9b9b9b;
@@ -73,6 +74,9 @@ $fnt-color-description: #9b9b9b;
 	line-height: 1.5;
 	letter-spacing: 0.6px;
 	text-align: justify;
+	@media (max-width: 1366px) {
+		font-size: $fnt-size-paragraph-md;
+	}
 }
 
 .text-info {
