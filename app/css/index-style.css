@@ -602,7 +602,7 @@ section.team {
       margin-top: 25px; }
       section.team .team-wrapper .time-description h3 {
         text-align: center;
-        color: green; }
+        color: blue; }
     section.team .team-wrapper .team-members {
       margin-top: 95px; }
       @media (max-width: 1366px) {
@@ -683,7 +683,7 @@ section.contact {
     justify-content: space-between; }
     @media (max-width: 1024px) {
       section.contact .contact-wrapper .contact-info-wrapper {
-        height: 365px;
+        height: auto;
         margin-top: 60px; } }
     section.contact .contact-wrapper .contact-info-wrapper .contact-title h2 {
       text-align: center; }
@@ -772,7 +772,7 @@ section.contact {
       height: 350px; }
       @media (max-width: 1366px) {
         section.contact .contact-wrapper .support-wrapper {
-          height: 260px; } }
+          height: 300px; } }
       section.contact .contact-wrapper .support-wrapper .support-title {
         display: -webkit-box;
         display: -webkit-flex;
