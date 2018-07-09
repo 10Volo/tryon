@@ -1,36 +1,36 @@
 ul.onepage-pagination {
   background-color: rgba(0, 0, 0, 0);
-  top: calc(50% - 54px);
+  top: calc(50% - 73px);
   right: 40px; }
-  @media (max-width: 1024px) {
-    ul.onepage-pagination {
-      top: calc(50% - 68px); } }
-  @media (max-width: 1024px) {
-    ul.onepage-pagination li a {
-      padding: 5px 0; } }
-  ul.onepage-pagination li a:before {
-    background-color: #ffffff;
-    width: 12px;
-    height: 12px;
-    border: 2px solid #bebebe; }
+  ul.onepage-pagination li a {
+    padding: 12px 10px; }
     @media (max-width: 1024px) {
-      ul.onepage-pagination li a:before {
-        width: 23px;
-        height: 23px;
-        border-radius: 13px; } }
-  ul.onepage-pagination li a.active:before {
-    background-color: #bebebe;
-    width: 12px;
-    height: 12px;
-    left: 10px;
-    border: none;
-    margin-top: 0px; }
+      ul.onepage-pagination li a {
+        padding: 20px; } }
+    ul.onepage-pagination li a:before {
+      background-color: #ffffff;
+      width: 12px;
+      height: 12px;
+      border: 2px solid #bebebe; }
+      @media (max-width: 1024px) {
+        ul.onepage-pagination li a:before {
+          width: 20px;
+          height: 20px; } }
     @media (max-width: 1024px) {
-      ul.onepage-pagination li a.active:before {
-        width: 23px;
-        height: 23px;
-        border-radius: 13px;
-        left: 17px; } }
+      ul.onepage-pagination li a.active {
+        padding: 17px 0; } }
+    ul.onepage-pagination li a.active:before {
+      background-color: #bebebe;
+      width: 12px;
+      height: 12px;
+      left: 10px;
+      border: none;
+      margin-top: 0px; }
+      @media (max-width: 1024px) {
+        ul.onepage-pagination li a.active:before {
+          width: 20px;
+          height: 20px;
+          left: 20px; } }
   ul.onepage-pagination.hide {
     display: none; }
   ul.onepage-pagination li:first-child {
