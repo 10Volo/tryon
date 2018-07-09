@@ -274,6 +274,10 @@ section.about {
 				@media (max-width: 1366px) {
 					margin-top: 30px;
 				}
+				@media (max-width: 768px) {
+					width: 425px;
+					margin-top: 60px;
+				}
 			}
 			.about-store {
 				display: flex;
@@ -331,6 +335,9 @@ section.technology {
 			flex-direction: column;
 			justify-content: space-between;
 		}
+		@media (max-width: 768px) {
+			justify-content: center;
+		}
 		.technology-title {
 			margin-top: 90px;
 			@media (max-width: 1366px) {
@@ -369,12 +376,21 @@ section.technology {
 				@media (max-width: 1366px) {
 					width: 220px;
 				}
+				@media (max-width: 768px) {
+					width: 210px;
+				}
 				.technology-item-icon {
+					@media (max-width: 768px) {
+						margin-bottom: 10px;
+					}
 					img {
 						width: 80%;
 					}
 				}
 				.technology-item-description {
+					@media (max-width: 768px) {
+						margin-bottom: 5px;
+					}
 					p {
 						text-align: center;
 					}
@@ -393,6 +409,9 @@ section.team {
 		justify-content: center;
 		@media (max-width: 1024px) {
 			margin-top: 40px;
+		}
+		@media (max-width: 1024px) {
+			margin-top: 80px;
 		}
 		.team-title {
 			h2 {
@@ -417,6 +436,10 @@ section.team {
 					img {
 						width: 210px;
 						height: 210px;
+						@media (max-width: 768px) {
+							width: 170px;
+							height: 170px;
+						}
 					}
 				}
 				.team-member-info {
@@ -497,6 +520,10 @@ section.contact {
 				@media (max-width: 1024px) {
 					width: auto;
 					margin-top: 50px;
+				}
+				@media (max-width: 768px) {
+					justify-content: flex-start;
+					margin-left: 50px;
 				}
 				.contact-item-title {
 					text-align: right;
