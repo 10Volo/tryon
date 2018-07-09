@@ -601,8 +601,7 @@ section.team {
     section.team .team-wrapper .time-description {
       margin-top: 25px; }
       section.team .team-wrapper .time-description h3 {
-        text-align: center;
-        color: blue; }
+        text-align: center; }
     section.team .team-wrapper .team-members {
       margin-top: 95px; }
       @media (max-width: 1366px) {
@@ -763,7 +762,7 @@ section.contact {
       @media (max-width: 1024px) {
         section.contact .contact-wrapper .contact-info-wrapper .contact-us {
           margin-top: 30px;
-          margin-bottom: 0; } }
+          margin-bottom: 30px; } }
       section.contact .contact-wrapper .contact-info-wrapper .contact-us h4 {
         text-align: center; }
     section.contact .contact-wrapper .support-wrapper {
