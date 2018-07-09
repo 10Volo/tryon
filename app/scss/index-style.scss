@@ -221,6 +221,9 @@ section.home-page {
 		@media (max-width: 1366px) {
 			right: 130px;
 		}
+		@media (max-width: 1280px) {
+			right: 85px;
+		}
 		@media (max-width: 1024px) {
 			right: 40px;
 		}
@@ -250,7 +253,7 @@ section.about {
 		justify-content: space-between;
 		margin-top: 80px;
 		@media (max-width: 1366px) {
-			width: 615px;
+			width: auto;
 		}
 		.about-section-top {
 			height: 620px;
@@ -318,9 +321,7 @@ section.about {
 			width: 80%;
 			@media (max-width: 1366px) {
 				width: 60%;
-			}
-			@media (max-width: 1366px) {
-				width: 80%;
+				margin-left: 10px;
 			}
 		}
 	}
@@ -372,14 +373,33 @@ section.technology {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
-				margin: auto;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 20px;
 				@media (max-width: 1366px) {
 					width: 220px;
+					margin-top: 10px;
+					@media (max-width: 1280px) {
+						margin-top: 20px;
+					}
 				}
 				@media (max-width: 768px) {
 					width: 210px;
 				}
 				.technology-item-icon {
+					margin-bottom: 20px;
+					@media (max-width: 1366px) {
+						margin-bottom: 10px;
+					}
+					img {
+						width: 75%;
+						padding-left: 20px;
+						@media (max-width: 1366px) {
+							width: 75%;
+							padding-left: 20px;
+							//background-color: green;
+						}
+					}
 					@media (max-width: 768px) {
 						margin-bottom: 10px;
 					}
@@ -388,6 +408,9 @@ section.technology {
 					}
 				}
 				.technology-item-description {
+					@media (max-width: 1280px) {
+						margin-top: 20px;
+					}
 					@media (max-width: 768px) {
 						margin-bottom: 5px;
 					}
@@ -552,7 +575,7 @@ section.contact {
 				margin-top: 50px;
 				margin-bottom: 20px;
 				@media (max-width: 1366px) {
-					margin-top: 30px;
+					margin-top: 20px;
 				}
 				@media (max-width: 1024px) {
 					margin-top: 60px;
@@ -589,9 +612,12 @@ section.contact {
 				align-items: center;
 				margin-top: 40px;
 				@media (max-width: 1366px) {
-					margin-top: 25px;
+					margin-top: 0;
 				}
 				.support-brand {
+					@media (max-width: 1366px) {
+						margin-top: 15px;
+					}
 					img {
 						width: 70%;
 					}
