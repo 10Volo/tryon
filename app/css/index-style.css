@@ -511,7 +511,7 @@ section.technology {
           margin-top: 20px; } }
       @media (max-width: 1024px) {
         section.technology .technology-wrapper .technology-description {
-          margin-bottom: 40px; } }
+          margin-bottom: 10px; } }
       section.technology .technology-wrapper .technology-description h3 {
         text-align: center; }
     section.technology .technology-wrapper .technology-types {
@@ -607,6 +607,9 @@ section.team {
       @media (max-width: 1366px) {
         section.team .team-wrapper .team-members {
           margin-top: 40px; } }
+      @media (max-width: 768px) {
+        section.team .team-wrapper .team-members {
+          margin-top: 20px; } }
       section.team .team-wrapper .team-members .team-member-item .team-member-photo {
         display: -webkit-box;
         display: -webkit-flex;
@@ -726,6 +729,9 @@ section.contact {
           line-height: 1.88;
           letter-spacing: 0.4px;
           color: #e2e2e2; }
+          @media (max-width: 1024px) {
+            section.contact .contact-wrapper .contact-info-wrapper .contact-item .contact-item-title span {
+              font-size: 15px; } }
       section.contact .contact-wrapper .contact-info-wrapper .contact-item .contact-item-info {
         display: -webkit-box;
         display: -webkit-flex;
@@ -736,11 +742,17 @@ section.contact {
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column; }
+        @media (max-width: 1024px) {
+          section.contact .contact-wrapper .contact-info-wrapper .contact-item .contact-item-info {
+            margin-right: 20px; } }
         section.contact .contact-wrapper .contact-info-wrapper .contact-item .contact-item-info span {
           font-family: 'Open Sans', sans-serif;
           font-size: 16px;
           line-height: 1.88;
           letter-spacing: 0.4px; }
+          @media (max-width: 1024px) {
+            section.contact .contact-wrapper .contact-info-wrapper .contact-item .contact-item-info span {
+              font-size: 15px; } }
     section.contact .contact-wrapper .contact-info-wrapper .contact-us {
       margin-top: 50px;
       margin-bottom: 20px; }
@@ -749,7 +761,8 @@ section.contact {
           margin-top: 20px; } }
       @media (max-width: 1024px) {
         section.contact .contact-wrapper .contact-info-wrapper .contact-us {
-          margin-top: 60px; } }
+          margin-top: 30px;
+          margin-bottom: 0; } }
       section.contact .contact-wrapper .contact-info-wrapper .contact-us h4 {
         text-align: center; }
     section.contact .contact-wrapper .support-wrapper {

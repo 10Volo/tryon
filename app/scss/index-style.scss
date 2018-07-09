@@ -357,7 +357,7 @@ section.technology {
 				margin-top: 20px;
 			}
 			@media (max-width: 1024px) {
-				margin-bottom: 40px;
+				margin-bottom: 10px;
 			}
 			h3 {
 				text-align: center;
@@ -451,6 +451,9 @@ section.team {
 			margin-top: 95px;
 			@media (max-width: 1366px) {
 				margin-top: 40px;
+			}
+			@media (max-width: 768px) {
+				margin-top: 20px;
 			}
 			.team-member-item {
 				.team-member-photo {
@@ -557,17 +560,26 @@ section.contact {
 						line-height: 1.88;
 						letter-spacing: 0.4px;
 						color: #e2e2e2;
+						@media (max-width: 1024px) {
+							font-size: 15px;
+						}
 					}
 				}
 				.contact-item-info {
 					display: flex;
 					flex-direction: column;
+					@media (max-width: 1024px) {
+						margin-right: 20px;
+					}
 
 					span {
 						font-family: 'Open Sans', sans-serif;
 						font-size: 16px;
 						line-height: 1.88;
 						letter-spacing: 0.4px;
+						@media (max-width: 1024px) {
+							font-size: 15px;
+						}
 					}
 				}
 			}
@@ -578,7 +590,8 @@ section.contact {
 					margin-top: 20px;
 				}
 				@media (max-width: 1024px) {
-					margin-top: 60px;
+					margin-top: 30px;
+					margin-bottom: 0;
 				}
 				h4 {
 					text-align: center;
