@@ -6,9 +6,12 @@ ul.onepage-pagination {
 		top: calc(50% - 68px);
 	}
 	li {
-		padding: 5px 0;
+
 		a {
-			padding: 17px;
+			@media (max-width: 1024px) {
+				//padding: 17px;
+				padding: 5px 0;
+			}
 			&:before {
 				background-color: #ffffff;
 				width: 12px;
