@@ -601,7 +601,8 @@ section.team {
     section.team .team-wrapper .time-description {
       margin-top: 25px; }
       section.team .team-wrapper .time-description h3 {
-        text-align: center; }
+        text-align: center;
+        color: green; }
     section.team .team-wrapper .team-members {
       margin-top: 95px; }
       @media (max-width: 1366px) {
