@@ -208,9 +208,6 @@ header.header-fixed {
 section.home-page {
 	position: relative;
 	margin-top: 80px;
-	@media (max-width: 1024px) {
-		background-color: green;
-	}
 	.home-page-motto {
 		height: 100vh;
 		display: flex;
@@ -225,14 +222,14 @@ section.home-page {
 			right: 130px;
 		}
 		@media (max-width: 1024px) {
-			right: 10px;
+			right: 40px;
 		}
 		img {
 			@media (max-width: 1366px) {
 				width: 73%;
 			}
 			@media (max-width: 1024px) {
-				width: 60%;
+				width: 80%;
 			}
 		}
 	}
@@ -252,8 +249,14 @@ section.about {
 		flex-direction: column;
 		justify-content: space-between;
 		margin-top: 80px;
+		@media (max-width: 1366px) {
+			width: 615px;
+		}
 		.about-section-top {
 			height: 620px;
+			@media (max-width: 1024px) {
+				height: 500px;
+			}
 			.about-title {
 				margin-top: 80px;
 				@media (max-width: 1366px) {
@@ -282,8 +285,17 @@ section.about {
 		}
 		.about-section-bottom {
 			height: 60px;
+			@media (max-width: 1024px) {
+				margin-bottom: 15px;
+			}
 			.about-info {
 
+				h4 {
+					@media (max-width: 1024px) {
+						font-size: 9px;
+						text-align: center;
+					}
+				}
 			}
 		}
 	}
@@ -294,10 +306,17 @@ section.about {
 		align-items: center;
 		margin-top: 80px;
 		margin-left: 0px;
+		@media (max-width: 1024px) {
+			align-items: center;
+			margin-top: 40px;
+		}
 		img {
 			width: 80%;
 			@media (max-width: 1366px) {
 				width: 60%;
+			}
+			@media (max-width: 1366px) {
+				width: 80%;
 			}
 		}
 	}
@@ -307,10 +326,18 @@ section.technology {
 	position: relative;
 	.technology-wrapper {
 		height: calc(100vh - 80px);
+		@media (max-width: 1024px) {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
 		.technology-title {
 			margin-top: 90px;
 			@media (max-width: 1366px) {
 				margin-top: 80px;
+			}
+			@media (max-width: 1024px) {
+				margin-top: 120px;
 			}
 			h2 {
 				text-align: center;
@@ -320,6 +347,9 @@ section.technology {
 			margin-top: 25px;
 			@media (max-width: 1366px) {
 				margin-top: 20px;
+			}
+			@media (max-width: 1024px) {
+				margin-bottom: 40px;
 			}
 			h3 {
 				text-align: center;
@@ -361,6 +391,9 @@ section.team {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		@media (max-width: 1024px) {
+			margin-top: 40px;
+		}
 		.team-title {
 			h2 {
 				text-align: center;
@@ -432,7 +465,12 @@ section.contact {
 		flex-direction: column;
 		justify-content: space-between;
 		.contact-info-wrapper {
+			@media (max-width: 1024px) {
+				height: 375px;
+				margin-top: 100px;
+			}
 			.contact-title {
+
 				h2 {
 					text-align: center;
 				}
@@ -455,6 +493,10 @@ section.contact {
 				}
 				@media (max-width: 1280px) {
 					width: 330px;
+				}
+				@media (max-width: 1024px) {
+					width: auto;
+					margin-top: 50px;
 				}
 				.contact-item-title {
 					text-align: right;
@@ -484,6 +526,9 @@ section.contact {
 				margin-bottom: 20px;
 				@media (max-width: 1366px) {
 					margin-top: 30px;
+				}
+				@media (max-width: 1024px) {
+					margin-top: 60px;
 				}
 				h4 {
 					text-align: center;

@@ -2,7 +2,11 @@ ul.onepage-pagination {
 	background-color: rgba(0, 0, 0, 0);
 	top: calc(50% - 54px);
 	right: 40px;
+	@media (max-width: 1024px) {
+		top: calc(50% - 68px);
+	}
 	li {
+		padding: 5px 0;
 		a {
 			padding: 17px;
 			&:before {
@@ -11,14 +15,12 @@ ul.onepage-pagination {
 				height: 12px;
 				border: 2px solid #bebebe;
 				@media (max-width: 1024px) {
-					width: 20px;
-					height: 20px;
+					width: 23px;
+					height: 23px;
+					border-radius: 13px;
 				}
 			}
 			&.active {
-				@media (max-width: 1024px) {
-					padding: 17px 0;
-				}
 				&:before {
 					background-color: #bebebe;
 					width: 12px;
@@ -27,8 +29,9 @@ ul.onepage-pagination {
 					border: none;
 					margin-top: 0px;
 					@media (max-width: 1024px) {
-						width: 20px;
-						height: 20px;
+						width: 23px;
+						height: 23px;
+						border-radius: 13px;
 						left: 17px;
 					}
 				}

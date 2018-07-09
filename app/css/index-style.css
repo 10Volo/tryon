@@ -2,32 +2,36 @@ ul.onepage-pagination {
   background-color: rgba(0, 0, 0, 0);
   top: calc(50% - 54px);
   right: 40px; }
-  ul.onepage-pagination li a {
-    padding: 17px; }
-    ul.onepage-pagination li a:before {
-      background-color: #ffffff;
-      width: 12px;
-      height: 12px;
-      border: 2px solid #bebebe; }
-      @media (max-width: 1024px) {
-        ul.onepage-pagination li a:before {
-          width: 20px;
-          height: 20px; } }
-    @media (max-width: 1024px) {
-      ul.onepage-pagination li a.active {
-        padding: 17px 0; } }
-    ul.onepage-pagination li a.active:before {
-      background-color: #bebebe;
-      width: 12px;
-      height: 12px;
-      left: 10px;
-      border: none;
-      margin-top: 0px; }
-      @media (max-width: 1024px) {
-        ul.onepage-pagination li a.active:before {
-          width: 20px;
-          height: 20px;
-          left: 17px; } }
+  @media (max-width: 1024px) {
+    ul.onepage-pagination {
+      top: calc(50% - 68px); } }
+  ul.onepage-pagination li {
+    padding: 5px 0; }
+    ul.onepage-pagination li a {
+      padding: 17px; }
+      ul.onepage-pagination li a:before {
+        background-color: #ffffff;
+        width: 12px;
+        height: 12px;
+        border: 2px solid #bebebe; }
+        @media (max-width: 1024px) {
+          ul.onepage-pagination li a:before {
+            width: 23px;
+            height: 23px;
+            border-radius: 13px; } }
+      ul.onepage-pagination li a.active:before {
+        background-color: #bebebe;
+        width: 12px;
+        height: 12px;
+        left: 10px;
+        border: none;
+        margin-top: 0px; }
+        @media (max-width: 1024px) {
+          ul.onepage-pagination li a.active:before {
+            width: 23px;
+            height: 23px;
+            border-radius: 13px;
+            left: 17px; } }
   ul.onepage-pagination.hide {
     display: none; }
   ul.onepage-pagination li:first-child {
@@ -338,9 +342,6 @@ header.header-fixed {
 section.home-page {
   position: relative;
   margin-top: 80px; }
-  @media (max-width: 1024px) {
-    section.home-page {
-      background-color: green; } }
   section.home-page .home-page-motto {
     height: 100vh;
     display: -webkit-box;
@@ -361,13 +362,13 @@ section.home-page {
         right: 130px; } }
     @media (max-width: 1024px) {
       section.home-page .home-page-phone {
-        right: 10px; } }
+        right: 40px; } }
     @media (max-width: 1366px) {
       section.home-page .home-page-phone img {
         width: 73%; } }
     @media (max-width: 1024px) {
       section.home-page .home-page-phone img {
-        width: 60%; } }
+        width: 80%; } }
   section.home-page a#moveTo {
     position: absolute;
     bottom: 60px;
@@ -392,8 +393,14 @@ section.about {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 80px; }
+    @media (max-width: 1366px) {
+      section.about .about-wrapper {
+        width: 615px; } }
     section.about .about-wrapper .about-section-top {
       height: 620px; }
+      @media (max-width: 1024px) {
+        section.about .about-wrapper .about-section-top {
+          height: 500px; } }
       section.about .about-wrapper .about-section-top .about-title {
         margin-top: 80px; }
         @media (max-width: 1366px) {
@@ -419,6 +426,13 @@ section.about {
           margin-right: 15px; }
     section.about .about-wrapper .about-section-bottom {
       height: 60px; }
+      @media (max-width: 1024px) {
+        section.about .about-wrapper .about-section-bottom {
+          margin-bottom: 15px; } }
+      @media (max-width: 1024px) {
+        section.about .about-wrapper .about-section-bottom .about-info h4 {
+          font-size: 9px;
+          text-align: center; } }
   section.about .about-phone {
     height: calc(100vh - 80px);
     display: -webkit-box;
@@ -435,21 +449,49 @@ section.about {
     align-items: center;
     margin-top: 80px;
     margin-left: 0px; }
+    @media (max-width: 1024px) {
+      section.about .about-phone {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: 40px; } }
     section.about .about-phone img {
       width: 80%; }
       @media (max-width: 1366px) {
         section.about .about-phone img {
           width: 60%; } }
+      @media (max-width: 1366px) {
+        section.about .about-phone img {
+          width: 80%; } }
 
 section.technology {
   position: relative; }
   section.technology .technology-wrapper {
     height: calc(100vh - 80px); }
+    @media (max-width: 1024px) {
+      section.technology .technology-wrapper {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between; } }
     section.technology .technology-wrapper .technology-title {
       margin-top: 90px; }
       @media (max-width: 1366px) {
         section.technology .technology-wrapper .technology-title {
           margin-top: 80px; } }
+      @media (max-width: 1024px) {
+        section.technology .technology-wrapper .technology-title {
+          margin-top: 120px; } }
       section.technology .technology-wrapper .technology-title h2 {
         text-align: center; }
     section.technology .technology-wrapper .technology-description {
@@ -457,6 +499,9 @@ section.technology {
       @media (max-width: 1366px) {
         section.technology .technology-wrapper .technology-description {
           margin-top: 20px; } }
+      @media (max-width: 1024px) {
+        section.technology .technology-wrapper .technology-description {
+          margin-bottom: 40px; } }
       section.technology .technology-wrapper .technology-description h3 {
         text-align: center; }
     section.technology .technology-wrapper .technology-types {
@@ -505,6 +550,9 @@ section.team {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center; }
+    @media (max-width: 1024px) {
+      section.team .team-wrapper {
+        margin-top: 40px; } }
     section.team .team-wrapper .team-title h2 {
       text-align: center; }
     section.team .team-wrapper .time-description {
@@ -582,6 +630,10 @@ section.contact {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+    @media (max-width: 1024px) {
+      section.contact .contact-wrapper .contact-info-wrapper {
+        height: 375px;
+        margin-top: 100px; } }
     section.contact .contact-wrapper .contact-info-wrapper .contact-title h2 {
       text-align: center; }
     section.contact .contact-wrapper .contact-info-wrapper .contact-description {
@@ -607,6 +659,10 @@ section.contact {
       @media (max-width: 1280px) {
         section.contact .contact-wrapper .contact-info-wrapper .contact-item {
           width: 330px; } }
+      @media (max-width: 1024px) {
+        section.contact .contact-wrapper .contact-info-wrapper .contact-item {
+          width: auto;
+          margin-top: 50px; } }
       section.contact .contact-wrapper .contact-info-wrapper .contact-item .contact-item-title {
         text-align: right;
         margin-right: 20px; }
@@ -637,6 +693,9 @@ section.contact {
       @media (max-width: 1366px) {
         section.contact .contact-wrapper .contact-info-wrapper .contact-us {
           margin-top: 30px; } }
+      @media (max-width: 1024px) {
+        section.contact .contact-wrapper .contact-info-wrapper .contact-us {
+          margin-top: 60px; } }
       section.contact .contact-wrapper .contact-info-wrapper .contact-us h4 {
         text-align: center; }
     section.contact .contact-wrapper .support-wrapper {
