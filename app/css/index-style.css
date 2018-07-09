@@ -434,7 +434,7 @@ section.about {
           margin-bottom: 15px; } }
       @media (max-width: 1024px) {
         section.about .about-wrapper .about-section-bottom .about-info h4 {
-          font-size: 9px;
+          font-size: 8px;
           text-align: center; } }
   section.about .about-phone {
     height: calc(100vh - 80px);
