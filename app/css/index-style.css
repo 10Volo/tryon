@@ -111,7 +111,8 @@ ul.onepage-pagination {
     color: #000000;
     border-bottom: 1px solid #000000; }
     .text-info a:hover {
-      text-decoration: none; }
+      text-decoration: none;
+      border: none; }
 
 .dsp-none {
   display: none; }
