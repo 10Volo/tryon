@@ -1,0 +1,47 @@
+.l-body {
+	position: relative;
+	z-index: 1;
+
+	#moveUp {
+		color: #9b9b9b;
+		position: fixed;
+		bottom: 60px;
+		right: 13px;
+		opacity: 0;
+		transition: opacity 0.5s linear;
+		z-index: 5;
+		display: none;
+		&:hover {
+			color: #000000;
+			img {
+				opacity: 1;
+			}
+		}
+		img {
+			opacity: 0.3;
+		}
+	}
+
+	&.viewing-page-1 {
+		.onepage-pagination {
+			display: none;
+		}
+	}
+
+	&:not(.viewing-page-1) {
+		#moveUp {
+			opacity: 1;
+			display: block;
+		}
+	}
+
+	.wrapper {
+		height: 100% !important;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	section {
+		height: 100vh;
+	}
+}
