@@ -178,6 +178,7 @@ header.header-fixed {
 		opacity: 0;
 		transition: opacity 0.5s linear;
 		z-index: 5;
+		display: none;
 	}
 
 	&.viewing-page-1 {
@@ -189,6 +190,7 @@ header.header-fixed {
 	&:not(.viewing-page-1) {
 		#moveUp {
 			opacity: 1;
+			display: block;
 		}
 	}
 

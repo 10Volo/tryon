@@ -384,7 +384,7 @@ function onePageScroll(element, options) {
     var index = document.querySelector(settings.sectionContainer +".active").dataset.index,
 		    current = document.querySelector(settings.sectionContainer + "[data-index='" + index + "']"),
 		    next = document.querySelector(settings.sectionContainer + "[data-index='" + (parseInt(index) + 1) + "']");
-		    
+		    console.log(next);
 		    
 		if(!next) {
 			if (settings.loop == true) {

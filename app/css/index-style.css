@@ -326,11 +326,13 @@ header.header-fixed {
     opacity: 0;
     -webkit-transition: opacity 0.5s linear;
     transition: opacity 0.5s linear;
-    z-index: 5; }
+    z-index: 5;
+    display: none; }
   .l-body.viewing-page-1 .onepage-pagination {
     display: none; }
   .l-body:not(.viewing-page-1) #moveUp {
-    opacity: 1; }
+    opacity: 1;
+    display: block; }
   .l-body .wrapper {
     height: 100% !important;
     margin: 0 auto;
