@@ -822,6 +822,9 @@ section.contact {
       @media (max-width: 1366px) {
         section.contact .contact-wrapper .support-wrapper {
           height: 300px; } }
+      @media (max-width: 1024px) {
+        section.contact .contact-wrapper .support-wrapper {
+          height: 275px; } }
       section.contact .contact-wrapper .support-wrapper .support-title {
         display: -webkit-box;
         display: -webkit-flex;
