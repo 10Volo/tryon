@@ -18,26 +18,28 @@
 <body class="l-body">
 <a href="" id="moveUp"><img src="app/img/arrow-down.png" alt="">top</a>
 <header class="header-fixed">
-	<nav class="menu-nav">
-		<div class="header-logo">
-			<a href="">
-				<img src="app/img/tryon-logo.png" alt="">
-			</a>
-		</div>
-		<div class="menu">
-			<ul>
-				<li class="items"><a href="#2" onClick="moveTo('.main', 2); event.preventDefault();">about</a></li>
-				<li class="items"><a href="#3" onClick="moveTo('.main', 3); event.preventDefault();">technology</a></li>
-				<li class="items"><a href="#4" onClick="moveTo('.main', 4); event.preventDefault();">team</a></li>
-				<li class="items"><a href="#5" onClick="moveTo('.main', 5); event.preventDefault();">contact </a></li>
-			</ul>
-		</div>
-		<div class="toggle" onclick="menu_toggle(this.parentNode)">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-	</nav>
+	<div class="container">
+		<nav class="menu-nav">
+			<div class="header-logo">
+				<a href="">
+					<img src="app/img/tryon-logo.png" srcset="app/img/retina-2x/tryon-logo@2x.png 2x" alt="">
+				</a>
+			</div>
+			<div class="menu">
+				<ul>
+					<li class="items"><a href="#2" onClick="moveTo('.main', 2); event.preventDefault();">about</a></li>
+					<li class="items"><a href="#3" onClick="moveTo('.main', 3); event.preventDefault();">technology</a></li>
+					<li class="items"><a href="#4" onClick="moveTo('.main', 4); event.preventDefault();">team</a></li>
+					<li class="items"><a href="#5" onClick="moveTo('.main', 5); event.preventDefault();">contacts</a></li>
+				</ul>
+			</div>
+			<div class="toggle" onclick="menu_toggle(this.parentNode)">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</nav>
+	</div>
 </header>
 
 <div class="wrapper">
@@ -51,14 +53,14 @@
 					<img src="app/img/phone-cut.png" alt="">
 				</div>
 				<a id="moveTo" href="javascript:void(0)">scroll
-					<img src="app/img/arrow-down.png" alt="">
+					<img src="app/img/arrow-down.png" srcset="app/img/arrow-down.png 2x" alt="">
 				</a>
 			</div>
 		</section>
 		<section id="2" class="page1 about">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8">
+					<div class="col-sm-12 col-md-12 col-lg-8 ">
 						<div class="about-wrapper">
 							<div class="about-section-top">
 								<div class="about-title">
@@ -79,23 +81,25 @@
 										jewelry.</p>
 								</div>
 								<div class="about-store">
-									<div class="about store-banner">
-										<a href=""><img src="app/img/apple-store.png" alt=""></a></div>
-									<div class="about store-banner">
-										<a href=""><img src="app/img/google-play.png" alt=""></a></div>
+									<div class="about-store-banner">
+										<a href=""><img src="app/img/apple-store.png" srcset="app/img/retina-2x/apple-store@2x.png 2x" alt=""></a>
+									</div>
+									<div class="about-store-banner">
+										<a href=""><img src="app/img/google-play.png" srcset="app/img/retina-2x/google-play@2x.png 2x" alt=""></a>
+									</div>
 								</div>
 							</div>
 							<div class="about-section-bottom">
 								<div class="about-info">
 									<h4 class="text-info">
 										Don’t want to wait until the app is published?
-										<a href="">Request a Demo Now</a> Request a Demo Now
+										<a href="">Request a Demo Now</a>
 									</h4>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-sm-12 col-md-12 col-lg-4">
 						<div class="about-phone">
 							<img src="app/img/i-phone-x.png" alt="">
 						</div>
@@ -117,7 +121,7 @@
 							<div class="col-sm-6 col-lg-4">
 								<div class="technology-type-item">
 									<div class="technology-item-icon">
-										<img src="app/img/icon/icon-1.png" alt="">
+										<img src="app/img/icon/icon-1.png" srcset="app/img/retina-2x/icon/icon-1@2x.png 2x" alt="">
 									</div>
 									<div class="technology-item-description">
 										<p class="text-paragraph">Real time inference of deep neural networks on mobile
@@ -128,7 +132,7 @@
 							<div class="col-sm-6 col-lg-4">
 								<div class="technology-type-item">
 									<div class="technology-item-icon">
-										<img src="app/img/icon/icon-2.png" alt="">
+										<img src="app/img/icon/icon-2.png" srcset="app/img/retina-2x/icon/icon-2@2x.png 2x alt="">
 									</div>
 									<div class="technology-item-description">
 										<p class="text-paragraph">Advancing algorithm performance to human
@@ -139,7 +143,7 @@
 							<div class="col-sm-6 col-lg-4">
 								<div class="technology-type-item">
 									<div class="technology-item-icon">
-										<img src="app/img/icon/icon-3.png" alt="">
+										<img src="app/img/icon/icon-3.png" srcset="app/img/retina-2x/icon/icon-3@2x.png 2x alt="">
 									</div>
 									<div class="technology-item-description">
 										<p class="text-paragraph">Tracking and annotating human hands</p>
@@ -149,7 +153,7 @@
 							<div class="col-sm-6 col-lg-4">
 								<div class="technology-type-item">
 									<div class="technology-item-icon">
-										<img src="app/img/icon/icon-4.png" alt="">
+										<img src="app/img/icon/icon-4.png" srcset="app/img/retina-2x/icon/icon-4@2x.png 2x alt="">
 									</div>
 									<div class="technology-item-description">
 										<p class="text-paragraph">Collecting unique datasets and annotations</p>
@@ -159,7 +163,7 @@
 							<div class="col-sm-6 col-lg-4">
 								<div class="technology-type-item">
 									<div class="technology-item-icon">
-										<img src="app/img/icon/icon-5.png" alt="">
+										<img src="app/img/icon/icon-5.png" srcset="app/img/retina-2x/icon/icon-5@2x.png 2x alt="">
 									</div>
 									<div class="technology-item-description">
 										<p class="text-paragraph">Ray-tracing and rendering complex objects in various
@@ -170,7 +174,7 @@
 							<div class="col-sm-6 col-lg-4">
 								<div class="technology-type-item">
 									<div class="technology-item-icon">
-										<img src="app/img/icon/icon-6.png" alt="">
+										<img src="app/img/icon/icon-6.png" srcset="app/img/retina-2x/icon/icon-6@2x.png 2x alt="">
 									</div>
 									<div class="technology-item-description">
 										<p class="text-paragraph">Some another super benefut of out technology</p>
@@ -196,7 +200,7 @@
 							<div class="col-lg-4">
 								<div class="team-member-item">
 									<div class="team-member-photo">
-										<img src="app/img/andrii.png" alt="">
+										<img src="app/img/andrii.png" srcset="app/img/retina-2x/team/andrii@2x.png 2x" alt="">
 									</div>
 									<div class="team-member-info">
 										<div class="team-member-name">
@@ -211,7 +215,7 @@
 							<div class="col-lg-4">
 								<div class="team-member-item">
 									<div class="team-member-photo">
-										<img src="app/img/nataliia.png" alt="">
+										<img src="app/img/nataliia.png" srcset="app/img/retina-2x/team/nataliia@2x.png 2x" alt="">
 									</div>
 									<div class="team-member-info">
 										<div class="team-member-name">
@@ -226,7 +230,7 @@
 							<div class="col-lg-4">
 								<div class="team-member-item">
 									<div class="team-member-photo">
-										<img src="app/img/nazarii.png" alt="">
+										<img src="app/img/nazarii.png" srcset="app/img/retina-2x/team/nataliia@2x.png 2x" alt="">
 									</div>
 									<div class="team-member-info">
 										<div class="team-member-name">
@@ -260,7 +264,7 @@
 										<span>Email: Phone:</span>
 									</div>
 									<div class="contact-item-info">
-										<span>info@tryon.technology +1 416 606 0163</span>
+										<span>info@tryon.technology <br>+1 416 606 0163</span>
 									</div>
 								</div>
 							</div>
@@ -270,7 +274,7 @@
 										<span>Address:</span>
 									</div>
 									<div class="contact-item-info">
-										<span>175 Bloor Street East, Suite 200, North building <br>Toronto, ON, M4W 3R8</span>
+										<span>175 Bloor Street East, <br>Suite 200, North building <br>Toronto, ON, M4W 3R8</span>
 									</div>
 								</div>
 							</div>
@@ -281,7 +285,7 @@
 									</div>
 									<div class="contact-item-info">
 										<span>TRYON Technology is hiring!</span>
-										<span>View Available Positions</span>
+										<a href=""><span>View Available Positions</span></a>
 									</div>
 								</div>
 							</div>
@@ -300,30 +304,38 @@
 						</div>
 						<div class="support-brand-row">
 							<div class="support-brand">
-								<img src="app/img/support-brand/next-canada-with-tag-rgb-preview.png" alt="">
+								<img src="app/img/partners-logo/Next-Canada-with-Tag-RGB_preview.png"
+								     srcset="app/img/retina-2x/partners-logos/Next-Canada-with-Tag-RGB_preview@2x.png 2x" alt="">
 							</div>
 							<div class="support-brand">
-								<img src="app/img/support-brand/fed-dev-logo.png" alt="">
+								<img src="app/img/partners-logo/FedDevLogo.png"
+								     srcset="app/img/retina-2x/partners-logos/FedDevLogo@2x.png 2x" alt="">
 							</div>
 							<div class="support-brand">
-								<img src="app/img/support-brand/osler-hoskin-harcourt-logo-svg.png" alt="">
+								<img src="app/img/partners-logo/Osler,_Hoskin_&_Harcourt_Logo.svg.png"
+								     srcset="app/img/retina-2x/partners-logos/Osler,_Hoskin_&_Harcourt_Logo.svg@2x.png 2x" alt="">
 							</div>
 							<div class="support-brand">
-								<img src="app/img/support-brand/scotiabank-logo.png" alt="">
+								<img src="app/img/partners-logo/scotiabank-logo.png"
+								     srcset="app/img/retina-2x/partners-logos/scotiabank-logo@2x.png 2x" alt="">
 							</div>
 						</div>
 						<div class="support-brand-row">
 							<div class="support-brand">
-								<img src="app/img/support-brand/ey-logo-slogan.png" alt="">
+								<img src="app/img/partners-logo/EY_logo_slogan.png"
+								     srcset="app/img/retina-2x/partners-logos/EY_logo_slogan@2x.png 2x" alt="">
 							</div>
 							<div class="support-brand">
-								<img src="app/img/support-brand/1280-px-uoft-logo-svg.png" alt="">
+								<img src="app/img/partners-logo/1280px-uoft_logo-svg.png"
+								     srcset="app/img/retina-2x/partners-logos/1280px-uoft_logo-svg@2x.png 2x" alt="">
 							</div>
 							<div class="support-brand">
-								<img src="app/img/support-brand/nvidia-inception.png" alt="">
+								<img src="app/img/partners-logo/nvidia_inception.png"
+								     srcset="app/img/retina-2x/partners-logos/nvidia_inception@2x.png 2x" alt="">
 							</div>
 							<div class="support-brand">
-								<img src="app/img/support-brand/dmz-resize.png" alt="">
+								<img src="app/img/partners-logo/DMZ-logo.png"
+								     srcset="app/img/retina-2x/partners-logos/DMZ-logo@2x.png 2x" alt="">
 							</div>
 						</div>
 					</div>
