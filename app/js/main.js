@@ -1,7 +1,7 @@
 // scroll page right icon
 onePageScroll(".main", {
 	sectionContainer: "section",
-	loop: true,
+	loop: false,
 	responsiveFallback: false,
 	afterMove: function(index) {
 		var nav = $('nav'),

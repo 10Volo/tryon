@@ -112,6 +112,7 @@ function onePageScroll(element, options) {
   	_paginationHandler = function() {
       var page_index = this.dataset.index;
   		moveTo(el, page_index);
+      event.preventDefault();
   	}
     
     
@@ -383,7 +384,7 @@ function onePageScroll(element, options) {
     var index = document.querySelector(settings.sectionContainer +".active").dataset.index,
 		    current = document.querySelector(settings.sectionContainer + "[data-index='" + index + "']"),
 		    next = document.querySelector(settings.sectionContainer + "[data-index='" + (parseInt(index) + 1) + "']");
-		    
+		    console.log(next);
 		    
 		if(!next) {
 			if (settings.loop == true) {

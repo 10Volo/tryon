@@ -81,7 +81,7 @@ header.header-fixed {
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
-		//margin: 0 80px;
+		margin: 0 80px;
 		&.show {
 			@media (max-width: 767px) {
 				.menu {
@@ -93,9 +93,6 @@ header.header-fixed {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			&:hover {
-				opacity: 0.5;
-			}
 		}
 		.menu {
 			ul {
@@ -124,9 +121,6 @@ header.header-fixed {
 						&.active {
 							color: $fnt-color-main;
 							text-decoration: none;
-						}
-						&:hover {
-							color: #000000;
 						}
 					}
 				}
@@ -177,30 +171,14 @@ header.header-fixed {
 	position: relative;
 	z-index: 1;
 
-	a#moveTo {
-		color: #000000;
-		position: absolute;
-		bottom: 60px;
-		right: 13px;
-		opacity: 0.3;
-		img {
-			&:hover {
-			}
-		}
-		&:hover {
-			opacity: 1;
-		}
-	}
-
 	#moveUp {
-		color: #000000;
 		position: fixed;
 		bottom: 60px;
 		right: 13px;
 		opacity: 0;
 		transition: opacity 0.5s linear;
 		z-index: 5;
-
+		display: none;
 	}
 
 	&.viewing-page-1 {
@@ -211,11 +189,8 @@ header.header-fixed {
 
 	&:not(.viewing-page-1) {
 		#moveUp {
-			opacity: 0.3;
-			&:hover {
-				opacity: 1;
-				transition: opacity 0.05s linear;
-			}
+			opacity: 1;
+			display: block;
 		}
 	}
 
@@ -240,7 +215,6 @@ section.home-page {
 		display: flex;
 		align-items: center;
 		margin-top: -80px;
-		margin-left: 70px;
 	}
 	.home-page-phone {
 		position: absolute;
@@ -264,6 +238,11 @@ section.home-page {
 			}
 		}
 	}
+	a#moveTo {
+		position: absolute;
+		bottom: 60px;
+		right: 13px;
+	}
 }
 
 section.about {
@@ -275,13 +254,8 @@ section.about {
 		flex-direction: column;
 		justify-content: space-between;
 		margin-top: 80px;
-		margin-left: 70px;
 		@media (max-width: 1366px) {
 			width: auto;
-		}
-		@media (max-width: 768px) {
-			margin-left: 0;
-			//justify-content: flex-start;
 		}
 		.about-section-top {
 			height: 620px;
@@ -313,18 +287,13 @@ section.about {
 			.about-store {
 				display: flex;
 				margin-top: 40px;
-				.about-store-banner {
-					a {
-						cursor: default;
-						img {
-							margin-right: 15px;
-						}
-					}
+				img {
+					margin-right: 15px;
 				}
 			}
 		}
 		.about-section-bottom {
-			height: 80px;
+			height: 60px;
 			@media (max-width: 1024px) {
 				margin-bottom: 15px;
 			}
@@ -333,7 +302,7 @@ section.about {
 				h4 {
 					@media (max-width: 1024px) {
 						font-size: 8px;
-						text-align: left;
+						text-align: center;
 					}
 				}
 			}
@@ -397,7 +366,7 @@ section.technology {
 			}
 		}
 		.technology-types {
-			margin-top: 15px;
+			margin-top: 45px;
 			@media (max-width: 1366px) {
 				margin-top: 20px;
 			}
@@ -408,7 +377,7 @@ section.technology {
 				align-items: center;
 				margin-left: auto;
 				margin-right: auto;
-				margin-top: 50px;
+				margin-top: 20px;
 				@media (max-width: 1366px) {
 					width: 220px;
 					margin-top: 10px;
@@ -459,13 +428,10 @@ section.technology {
 section.team {
 	position: relative;
 	.team-wrapper {
-		height: calc(100vh - 190px);
+		height: calc(100vh - 80px);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		@media (max-width: 1366px) {
-			height: calc(100vh - 150px);
-		}
 		@media (max-width: 1024px) {
 			margin-top: 40px;
 		}
@@ -607,22 +573,7 @@ section.contact {
 					@media (max-width: 1024px) {
 						margin-right: 20px;
 					}
-					a {
-						color: #9b9b9b;
-						text-decoration: none;
-						&:hover {
-							color: #000000;
-						}
-						span {
-							font-family: 'Open Sans', sans-serif;
-							font-size: 16px;
-							line-height: 1.88;
-							letter-spacing: 0.4px;
-							@media (max-width: 1024px) {
-								font-size: 15px;
-							}
-						}
-					}
+
 					span {
 						font-family: 'Open Sans', sans-serif;
 						font-size: 16px;
@@ -674,7 +625,7 @@ section.contact {
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
-				margin-top: 20px;
+				margin-top: 40px;
 				@media (max-width: 1366px) {
 					margin-top: 0;
 				}
@@ -683,13 +634,7 @@ section.contact {
 						margin-top: 15px;
 					}
 					img {
-						opacity: 0.6;
-						&:hover {
-							opacity: 1;
-						}
-						@media (max-width: 1366px) {
-							width: 73%;
-						}
+						width: 70%;
 					}
 				}
 			}
