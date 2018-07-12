@@ -635,6 +635,9 @@ section.team {
     @media (max-width: 1024px) {
       section.team .team-wrapper {
         margin-top: 80px; } }
+    @media (max-width: 768px) {
+      section.team .team-wrapper {
+        height: calc(100vh - 60px); } }
     section.team .team-wrapper .team-title h2 {
       text-align: center; }
     section.team .team-wrapper .time-description {
@@ -721,8 +724,7 @@ section.contact {
     justify-content: space-between; }
     @media (max-width: 1024px) {
       section.contact .contact-wrapper .contact-info-wrapper {
-        height: auto;
-        margin-top: 50px; } }
+        height: auto; } }
     section.contact .contact-wrapper .contact-info-wrapper .contact-title h2 {
       text-align: center; }
     section.contact .contact-wrapper .contact-info-wrapper .contact-description {
@@ -820,6 +822,9 @@ section.contact {
       @media (max-width: 1366px) {
         section.contact .contact-wrapper .support-wrapper {
           height: 300px; } }
+      @media (max-width: 1024px) {
+        section.contact .contact-wrapper .support-wrapper {
+          height: 320px; } }
       section.contact .contact-wrapper .support-wrapper .support-title {
         display: -webkit-box;
         display: -webkit-flex;
