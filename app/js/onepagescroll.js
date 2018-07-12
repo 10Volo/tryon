@@ -112,6 +112,7 @@ function onePageScroll(element, options) {
   	_paginationHandler = function() {
       var page_index = this.dataset.index;
   		moveTo(el, page_index);
+      event.preventDefault();
   	}
     
     
