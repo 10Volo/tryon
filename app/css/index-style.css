@@ -381,13 +381,13 @@ section.home-page {
         right: 90px; } }
     @media (max-width: 1024px) {
       section.home-page .home-page-phone {
-        right: 40px; } }
+        right: 105px; } }
     @media (max-width: 1366px) {
       section.home-page .home-page-phone img {
         width: 73%; } }
     @media (max-width: 1024px) {
       section.home-page .home-page-phone img {
-        width: 80%; } }
+        width: 226px; } }
   section.home-page a#moveTo {
     color: #000000;
     position: absolute;
@@ -462,6 +462,10 @@ section.about {
       @media (max-width: 1024px) {
         section.about .about-wrapper .about-section-bottom {
           margin-bottom: 15px; } }
+      @media (max-width: 1024px) {
+        section.about .about-wrapper .about-section-bottom .about-info h4 {
+          text-align: left !important;
+          color: green; } }
       section.about .about-wrapper .about-section-bottom .about-info h4 a:hover {
         border: 0; }
       @media (max-width: 1024px) {
@@ -569,9 +573,12 @@ section.technology {
           section.technology .technology-wrapper .technology-types .technology-type-item {
             width: 220px;
             margin-top: 10px; } }
-  @media (max-width: 1366px) and (max-width: 1280px) {
-    section.technology .technology-wrapper .technology-types .technology-type-item {
-      margin-top: 20px; } }
+        @media (max-width: 1280px) {
+          section.technology .technology-wrapper .technology-types .technology-type-item {
+            margin-top: 20px; } }
+        @media (max-width: 1024px) {
+          section.technology .technology-wrapper .technology-types .technology-type-item {
+            margin: 15px auto; } }
         @media (max-width: 768px) {
           section.technology .technology-wrapper .technology-types .technology-type-item {
             width: 210px; } }
@@ -623,6 +630,7 @@ section.team {
         height: calc(100vh - 150px); } }
     @media (max-width: 1024px) {
       section.team .team-wrapper {
+        height: calc(100vh - 300px);
         margin-top: 40px; } }
     @media (max-width: 1024px) {
       section.team .team-wrapper {
@@ -714,7 +722,7 @@ section.contact {
     @media (max-width: 1024px) {
       section.contact .contact-wrapper .contact-info-wrapper {
         height: auto;
-        margin-top: 60px; } }
+        margin-top: 50px; } }
     section.contact .contact-wrapper .contact-info-wrapper .contact-title h2 {
       text-align: center; }
     section.contact .contact-wrapper .contact-info-wrapper .contact-description {
